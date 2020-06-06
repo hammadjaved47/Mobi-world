@@ -1,7 +1,8 @@
     *{
         margin: 0px ;
         padding: 0px;
-        line-height: 26px;   
+        line-height: 26px;  
+        max-width: 100%; 
     }
 .main{
     width: 100%;
@@ -10,7 +11,7 @@
   .Introduction{
       text-align: center;
     width: 100%;
-    height: 690px;
+    height: auto!important;
   }
   .Introduction hr{
         width: 450px;
@@ -20,23 +21,21 @@
         margin-top: -14px;
   }
 .intro{
-    text-align: left;
-    font-size: x-large;
-    margin-left: 50px;
+    text-align: center;
+    font-size: x-large; 
     margin-top: 80px;
 }
 .duction img{
     width: 450px;
     height: 450px;
 }
-  .footer{
+
+.footer{
 
     height: 360px;
-    width: 1364px;
-  }
- .navbar{
-     height: 70px;
+    width: 100%;
  }
+ 
 .carousel-inner img{
     width: 100%;
     height: 700px;
@@ -66,12 +65,14 @@
     box-shadow: 1px 1px 3px 3px grey;
     text-align: center;
     margin-bottom: 15px;
+    
 }
+
 .item p{
     font-weight: bold;
 }
 .products img{
-    margin-left: 80px;
+    margin-left: 110px;
     width: 135px;
     height: 170px ;
     display: block;
@@ -110,36 +111,29 @@
     margin-left: 580px;
     color:red;
 }
+.dropdown-item{
+    font-size: small;
+    padding-left: 5px !important;
+}
 
-    /* @media screen and (max-width: 480px){
-        .introduction p{
-            padding-left: 30px !important;
+    @media screen and (max-width: 780px){
+        .Introduction hr{
+           display: none;
         }
-        .counter{
-            display: flex;
-            flex-direction: column;
+        .footer{
+            height: auto;
         }
-        .container-2{
-            width: 95%;
-            padding-top: 0px;
+        .Rights{
+            margin-left: none !important;
+        }
+        .products{
+            margin: 10px !important  5px !important;
+        }
+       .products img{
+           margin-left: 0px !important;
+       }
 
-        }
-        .container-1{
-            width: 95%;
-            padding-bottom: 0px;
 
-        }
-        .IT{
-            padding: 40px 10px !important ;
-            margin: 20px 0px 0px !important;
-        }
-        .THARPARKAR{
-            margin: 20px 0px 0px !important;
-            padding: 40px 10px !important;
-        }
-        .header-strip{
-            display: flex;
-            flex-wrap: wrap;
-        }
-            
-    } */
+        
+    }
+
